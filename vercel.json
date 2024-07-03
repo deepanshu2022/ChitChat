@@ -1,0 +1,20 @@
+{
+    "buildCommand": "cd client && npm install && npm run build ",
+    "runCommand": "cd api && npm install && nodemon index.js",
+    "frameworks": {
+        "client": {
+            "type": "create-react-app",
+            "debug": true
+        },
+        "api": {
+            "type": "node.js",
+            "debug": true
+        }
+    },
+    "rewrites": [
+        {
+            "source": "/api/(.*)",
+            "destination": "/api/index.js"
+        }
+    ]
+}
