@@ -1,16 +1,7 @@
 {
     "buildCommand": "cd client && npm install && npm run build ",
     "outputDirectory": "client/dist",
-    "frameworks": {
-        "client": {
-            "type": "create-react-app",
-            "debug": true
-        },
-        "api": {
-            "type": "node.js",
-            "debug": true
-        }
-    },
+    "framework": "react",
     "rewrites": [
         {
             "source": "/api/(.*)",
