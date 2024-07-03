@@ -1,6 +1,6 @@
 {
     "buildCommand": "cd client && npm install && npm run build ",
-    "runCommand": "cd api && npm install && nodemon index.js",
+    "outputDirectory": "client/dist",
     "frameworks": {
         "client": {
             "type": "create-react-app",
